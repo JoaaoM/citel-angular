@@ -1,0 +1,21 @@
+<section hlmCard class="container">
+  <div hlmCardHeader>
+    <h3 hlmCardTitle>Quantidade de doadores para cada tipo de sangue</h3>
+    <p hlmCardDescription>A quantidade de possíveis doadores para cada tipo sanguíneo receptor. Somente pessoas com idade de 16 a 69 anos e com peso acima de 50 Kg podem doar sangue.</p>
+  </div>
+  <div hlmCardContent>
+    <ngx-charts-bar-vertical [results]="data"
+                             [view] = "view"
+                             [xAxis]="xAxis"
+                             [yAxis]="yAxis"
+                             [legendTitle]="legendTitle"
+                             [legend]="legend"
+                             [showXAxisLabel]="xAxis"
+                             [showYAxisLabel]="yAxis"
+                             [xAxisLabel]="xAxisLabel"
+                             [yAxisLabel]="yAxisLabel"
+
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+</section>

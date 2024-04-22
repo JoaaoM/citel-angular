@@ -1,0 +1,21 @@
+<section hlmCard class="container">
+  <div hlmCardHeader>
+    <h3 hlmCardTitle>Média do IMC por faixa etaria</h3>
+    <p hlmCardDescription>IMC médio em cada faixa de idade de dez em dez anos</p>
+  </div>
+  <div hlmCardContent>
+    <ngx-charts-bar-vertical [results]="data"
+                             [view] = "view"
+                             [xAxis]="xAxis"
+                             [yAxis]="yAxis"
+                             [legendTitle]="legendTitle"
+                             [legend]="legend"
+                             [showXAxisLabel]="xAxis"
+                             [showYAxisLabel]="yAxis"
+                             [xAxisLabel]="xAxisLabel"
+                             [yAxisLabel]="yAxisLabel"
+
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+</section>
