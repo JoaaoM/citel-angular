@@ -2,8 +2,7 @@
 
 ## Descrição
 
-Este repositório contém a parte front-end do desafio para a vaga de programador Java na empresa Citel Software. O objetivo deste desafio é avaliar suas habilidades de desenvolvimento e sua capacidade de resolver problemas no contexto de desenvolvimento front-end utilizando a linguagem Javascript.
-
+Este repositório contém a parte front-end do desafio para a vaga de programador Java na empresa Citel Software.
 ## Tecnologias Utilizadas
 
 - Angular 17
