@@ -1,27 +1,36 @@
-# CitelAngular
+# Teste Citel - Programador Java
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+## Descrição
 
-## Development server
+Este repositório contém a parte back-end do desafio para a vaga de programador Java na empresa Citel Software. O objetivo deste desafio é avaliar suas habilidades de desenvolvimento e sua capacidade de resolver problemas no contexto de desenvolvimento front-end utilizando a linguagem Javascript.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias Utilizadas
 
-## Code scaffolding
+- Angular 17
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Pré-requisitos
 
-## Build
+Antes de começar, as seguintes ferramentas devem estar instaladas em sua máquina:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Windows 11
+- npm 10.5.2 (npm install npm@10.5.2)
+- Angular/Cli (npm install -g @angular/cli)
 
-## Running unit tests
+## Como Rodar o Aplicativo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Antes de executar o front-end, é necessário executar o [back-end](https://github.com/JoaaoM/citel-back-end). Siga estas etapas para executar o aplicativo em sua máquina local:
 
-## Running end-to-end tests
+1. Clone este repositório: `git clone https://github.com/JoaaoM/citel-angular`
+2. Certifique-se de que o Docker Desktop está instalado e em execução em sua máquina.
+3. Navegue até o diretório do projeto: `cd citel-front-end`
+4. Execute o comando: `npm i` para baixar as dependência.
+5. Execute o comando: `npm update` para atualizar as dependência.
+6. Execute o comando: `ng serve` para subir a aplicação.
+7. Acesse o aplicativo através do link `http://localhost:4200/upload` em seu navegador.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Certifique-se de seguir essas etapas na ordem correta para garantir o funcionamento correto do aplicativo.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Autor
+
+João Marques Oliveira
