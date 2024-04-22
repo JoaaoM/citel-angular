@@ -38,11 +38,6 @@ export class CardPessoaPorEstadoComponent implements OnInit{
   barPadding: number = 5
   legendTitle: string = 'UF'
   legend:boolean = true;
-  colorScheme = [
-    { name: 'SP', value: '#5AA454' },
-    { name: 'RJ', value: '#5AA454' },
-    { name: 'MG', value: '#5AA454' },
-  ];
 
   constructor(
     private route: ActivatedRoute,

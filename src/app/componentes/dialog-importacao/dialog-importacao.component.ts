@@ -60,7 +60,7 @@ export class DialogImportacaoComponent {
       this.importacaoService.uploadFile(this.fileToUpload).subscribe(resp => {
 
         this.loading = false;
-        alert("Uploaded");
+        alert(resp);
         this.uploadSucesso.emit();
       })
     } else {

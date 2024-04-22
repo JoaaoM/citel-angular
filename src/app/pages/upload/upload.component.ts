@@ -33,7 +33,7 @@ export class UploadComponent implements OnInit {
 
   atualizarLista(): void {
     this.importacaoService.getAllImportacoes().subscribe((data) => {
-      this.invoicesList = data;
+      this.invoicesList = data.reverse();
     })
   }
 

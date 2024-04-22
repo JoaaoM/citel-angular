@@ -10,7 +10,7 @@
     <div class="grid gap-4 py-4">
       <div class="grid grid-cols-4 items-center gap-4">
         <label hlmLabel for="arquivo" class="text-right">Arquivo</label>
-        <input hlmInput id="arquivo" type="file" (change)="handleFileInput($event)" class="col-span-3"/>
+        <input hlmInput id="arquivo" type="file" (change)="handleFileInput($event)" class="col-span-3" accept=".json"/>
       </div>
     </div>
     <hlm-dialog-footer>
