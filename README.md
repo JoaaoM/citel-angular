@@ -21,12 +21,11 @@ Antes de começar, as seguintes ferramentas devem estar instaladas em sua máqui
 Antes de executar o front-end, é necessário executar o [back-end](https://github.com/JoaaoM/citel-back-end). Siga estas etapas para executar o aplicativo em sua máquina local:
 
 1. Clone este repositório: `git clone https://github.com/JoaaoM/citel-angular`
-2. Certifique-se de que o Docker Desktop está instalado e em execução em sua máquina.
-3. Navegue até o diretório do projeto: `cd citel-front-end`
-4. Execute o comando: `npm i` para baixar as dependência.
-5. Execute o comando: `npm update` para atualizar as dependência.
-6. Execute o comando: `ng serve` para subir a aplicação.
-7. Acesse o aplicativo através do link `http://localhost:4200/upload` em seu navegador.
+2. Navegue até o diretório do projeto: `cd citel-front-end`
+3. Execute o comando: `npm i` para baixar as dependência.
+4. Execute o comando: `npm update` para atualizar as dependência.
+5. Execute o comando: `ng serve` para subir a aplicação.
+6. Acesse o aplicativo através do link `http://localhost:4200/upload` em seu navegador.
 
 Certifique-se de seguir essas etapas na ordem correta para garantir o funcionamento correto do aplicativo.
 
