@@ -1,1 +1,17 @@
-<p>tabela-importacao works!</p>
+<hlm-table class="w-full min-w-[400px]">
+  <hlm-caption>Lista das suas importações.</hlm-caption>
+  <hlm-trow>
+    <hlm-th class="w-52">ID</hlm-th>
+    <hlm-th class="w-60">Nome</hlm-th>
+    <hlm-th class="flex-1">Data de Importação</hlm-th>
+    <hlm-th class="w-40 justify-end">Visualizar</hlm-th>
+  </hlm-trow>
+  @for (invoice of invoices; track invoice) {
+  <hlm-trow>
+    <hlm-td truncate class="w-52 font-medium">{{ invoice.id }}</hlm-td>
+          <hlm-td class="w-60">{{ invoice.nomeArquivo }}</hlm-td>
+          <hlm-td class="flex-1">{{ invoice.dataImportacao }}</hlm-td>
+          <hlm-td class="w-40 justify-end"><button hlmBtn variant="ghost" (click)="navegarParaDashboard(invoice.id)"><hlm-icon size="sm" class="mr-2" name="lucideLineChart"/></button></hlm-td>
+        </hlm-trow>
+  }
+</hlm-table>

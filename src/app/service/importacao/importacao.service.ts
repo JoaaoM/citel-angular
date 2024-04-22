@@ -14,4 +14,10 @@ export class ImportacaoService {
     const url = `${this.apiUrl}`;
     return this.http.get(url);
   }
+
+  uploadFile(file: File) {
+    const formData = new FormData();
+    formData.append('jsonFile', file, file.name);
+    return this.http.post(this.apiUrl, formData, { responseType: 'text' });
+  }
 }

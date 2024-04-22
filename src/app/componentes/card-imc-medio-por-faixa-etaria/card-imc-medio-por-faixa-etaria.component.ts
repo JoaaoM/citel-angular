@@ -29,12 +29,12 @@ export class CardImcMedioPorFaixaEtariaComponent implements OnInit{
 
 
   // options
-  view: [number,number] = [700, 540];
+  view: [number,number] = [1000, 400];
   xAxis: boolean = true;
   yAxis: boolean = true;
-  xAxisLabel: string = 'UF'
-  yAxisLabel: string = 'Quantidade'
-  legendTitle: string = 'UF'
+  xAxisLabel: string = 'Anos'
+  yAxisLabel: string = 'Média'
+  legendTitle: string = 'Anos'
   legend:boolean = true
 
   constructor(
@@ -46,7 +46,6 @@ export class CardImcMedioPorFaixaEtariaComponent implements OnInit{
     this.idDaAnalise = this.route.snapshot.paramMap.get('id');
     this.analiseService.getImcMedioPorFaixaEtariaDeIdadeDeDezEmDezAnos(this.idDaAnalise).subscribe((data: cardImcMedioPorFaixaEtaria[]) => {
       this.data = data.map(item => ({ name: item.faixa, value: item.imc }));
-      console.log(data);
     });
   }
 

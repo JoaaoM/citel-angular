@@ -1,1 +1,16 @@
-<p>dashboard works!</p>
+<div class="max-w-7xl mx-auto p-6 space-y-4">
+  <div class="flex items-center">
+    <button hlmBtn variant='ghost' class="flex items-center gap-3" (click)="navegarParaUpload()">
+      <hlm-icon size="sm" class="mr-2" name="lucideArrowLeft"></hlm-icon>
+      Voltar
+    </button>
+    <h2 class="text-3xl font-bold ml-4">Dashboard</h2>
+  </div>
+  <main class="flex flex-col gap-10">
+    <app-card-pessoa-por-estado></app-card-pessoa-por-estado>
+    <app-card-imc-medio-por-faixa-etaria></app-card-imc-medio-por-faixa-etaria>
+    <app-card-doadores-por-receptor></app-card-doadores-por-receptor>
+    <app-card-obesidade-por-sexo></app-card-obesidade-por-sexo>
+    <app-card-media-idade-para-cada-tipo-sanguineo></app-card-media-idade-para-cada-tipo-sanguineo>
+  </main>
+</div>

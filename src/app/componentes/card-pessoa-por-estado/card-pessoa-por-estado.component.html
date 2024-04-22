@@ -1,1 +1,23 @@
-<p>card-pessoa-por-estado works!</p>
+<section hlmCard class="container">
+  <div hlmCardHeader>
+    <h3 hlmCardTitle>Pessoa por Estado</h3>
+    <p hlmCardDescription>Este gráfico exibe a distribuição da quantidade de pessoas por estado.</p>
+  </div>
+  <div hlmCardContent>
+    <ngx-charts-bar-vertical [results]="data"
+                             [view] = "view"
+                             [xAxis]="xAxis"
+                             [yAxis]="yAxis"
+                             [legendTitle]="legendTitle"
+                             [legend]="legend"
+                             [customColors]="colorScheme"
+                             [showXAxisLabel]="xAxis"
+                             [showYAxisLabel]="yAxis"
+                             [xAxisLabel]="xAxisLabel"
+                             [yAxisLabel]="yAxisLabel"
+
+    >
+
+    </ngx-charts-bar-vertical>
+  </div>
+</section>

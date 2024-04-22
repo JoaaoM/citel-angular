@@ -1,1 +1,13 @@
-<p>upload works!</p>
+<div class="max-w-4xl mx-auto p-6 space-y-4">
+  <h2 class="text-3xl font-bold">
+    Importações
+  </h2>
+  <div class='flex items-center justify-between'>
+    <app-filtragem-lista-importacao (filtro)="aplicarFiltro($event)"/>
+    <app-dialog-importacao (uploadSucesso)="onUploadSucesso()"/>
+  </div>
+
+  <div class='border rounded-lg p-2 w-full'>
+    <app-tabela-importacao [invoices]="invoicesList"/>
+  </div>
+</div>

@@ -1,1 +1,20 @@
-<p>dialog-importacao works!</p>
+<hlm-dialog>
+  <button id="edit-profile" brnDialogTrigger hlmBtn>Nova Importação</button>
+  <hlm-dialog-content class="sm:max-w-[425px]" *brnDialogContent="let ctx">
+
+    <hlm-dialog-header>
+      <h3 hlmDialogTitle>Nova Importação</h3>
+      <p hlmDialogDescription>Criar uma nova importação de pessoas no sistema.</p>
+    </hlm-dialog-header>
+
+    <div class="grid gap-4 py-4">
+      <div class="grid grid-cols-4 items-center gap-4">
+        <label hlmLabel for="arquivo" class="text-right">Arquivo</label>
+        <input hlmInput id="arquivo" type="file" (change)="handleFileInput($event)" class="col-span-3"/>
+      </div>
+    </div>
+    <hlm-dialog-footer>
+      <button hlmBtn type="submit" [disabled]="loading" (click)="upload()"><hlm-icon *ngIf="loading" name="lucideLoader2" size="sm" class="mr-2 animate-spin" />Salvar</button>
+    </hlm-dialog-footer>
+  </hlm-dialog-content>
+</hlm-dialog>

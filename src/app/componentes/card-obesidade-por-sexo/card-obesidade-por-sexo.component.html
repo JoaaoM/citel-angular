@@ -1,1 +1,24 @@
-<p>card-obesidade-por-sexo works!</p>
+<section hlmCard class="container">
+  <div hlmCardHeader>
+    <h3 hlmCardTitle>Obesidade entre homens e mulheres</h3>
+    <p hlmCardDescription>Esta tabela exibe a distribuição de obsesos entre homens e mulheres com IMC maior que 30</p>
+  </div>
+  <div hlmCardContent>
+    <hlm-table class="w-full min-w-[400px]">
+      <hlm-trow>
+        <hlm-th class="w-52">Sexo</hlm-th>
+        <hlm-th class="w-60">População Total</hlm-th>
+        <hlm-th class="flex-1">População Obesa</hlm-th>
+        <hlm-th class="w-40 justify-end">Percentual</hlm-th>
+      </hlm-trow>
+      @for (invoice of data; track invoice) {
+      <hlm-trow>
+        <hlm-td truncate class="w-52 font-medium">{{ invoice.sexo }}</hlm-td>
+          <hlm-td class="w-60">{{ invoice.populacaoTotal }}</hlm-td>
+          <hlm-td class="flex-1">{{ invoice.populacaoObesa }}</hlm-td>
+          <hlm-td class="w-40 justify-end">{{ invoice.percentual.toFixed(2) }}%</hlm-td>
+        </hlm-trow>
+      }
+    </hlm-table>
+  </div>
+</section>

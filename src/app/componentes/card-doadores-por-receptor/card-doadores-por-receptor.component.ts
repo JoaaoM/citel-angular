@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {AnalisesService} from "../../service/analises/analises.service";
-import {cardDoadoresPorReceptor, cardImcMedioPorFaixaEtaria} from "../../models/models";
+import {cardDoadoresPorReceptor} from "../../models/models";
 import {BarChartModule} from "@swimlane/ngx-charts";
 import {
   HlmCardContentDirective,
@@ -24,18 +24,18 @@ import {
   ],
   templateUrl: './card-doadores-por-receptor.component.html',
 })
-export class CardDoadoresPorReceptorComponent {
+export class CardDoadoresPorReceptorComponent implements OnInit{
   idDaAnalise: string | null | undefined;
   data: any[] | undefined;
 
 
   // options
-  view: [number,number] = [700, 540];
+  view: [number,number] = [1000, 400];
   xAxis: boolean = true;
   yAxis: boolean = true;
-  xAxisLabel: string = 'UF'
+  xAxisLabel: string = 'Sorotipagem'
   yAxisLabel: string = 'Quantidade'
-  legendTitle: string = 'UF'
+  legendTitle: string = 'Sorotipagem'
   legend:boolean = true
 
   constructor(
@@ -47,7 +47,7 @@ export class CardDoadoresPorReceptorComponent {
     this.idDaAnalise = this.route.snapshot.paramMap.get('id');
     this.analiseService.getQuantidadeDeDoadoresPorTipoSanguineo(this.idDaAnalise).subscribe((data: cardDoadoresPorReceptor[]) => {
       this.data = data.map(item => ({ name: item.sorotipagem, value: item.quantidade }));
-      console.log(data);
+      console.log('teste', this.data);
     });
   }
 }

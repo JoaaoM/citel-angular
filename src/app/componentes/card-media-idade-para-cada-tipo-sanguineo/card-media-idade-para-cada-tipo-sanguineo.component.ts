@@ -30,7 +30,7 @@ export class CardMediaIdadeParaCadaTipoSanguineoComponent {
 
 
   // options
-  view: [number,number] = [700, 540];
+  view: [number,number] = [1000, 400];
   xAxis: boolean = true;
   yAxis: boolean = true;
   xAxisLabel: string = 'Sorotipagem'
@@ -47,7 +47,6 @@ export class CardMediaIdadeParaCadaTipoSanguineoComponent {
     this.idDaAnalise = this.route.snapshot.paramMap.get('id');
     this.analiseService.getMediaDeIdadePorTipoSanguineo(this.idDaAnalise).subscribe((data: cardMediaIdadeParaCadaTipoSanguineo[]) => {
       this.data = data.map(item => ({ name: item.sorotipagem, value: item.media }));
-      console.log(data);
     });
   }
 }
