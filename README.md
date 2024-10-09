@@ -6,6 +6,10 @@ Este projeto é uma aplicação web desenvolvida utilizando o framework Angular.
 
 ![img.png](img.png)
 
+![img_2.png](img_2.png)
+
+![img_1.png](img_1.png)
+
 ## 🗂️ Estrutura do Projeto
 
 A estrutura do projeto segue as melhores práticas recomendadas pelo Angular, organizando o código em módulos, componentes e serviços. Abaixo está uma visão geral da estrutura de diretórios:
