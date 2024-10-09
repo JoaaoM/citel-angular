@@ -1,16 +1,9 @@
-version: "3.4"
+version: "3.5"
 services:
   vite_docker:
-    image: node:alpine
+    build: .
     container_name: vite_docker
-    entrypoint: sh -c "npm i -g @angular/cli -y && npm i  && ng serve "
     ports:
       - "4200:4200"
-    working_dir: /srv/app
-    volumes:
-      - type: bind
-        source: ./
-        target: /srv/app
     tty: true
-    environment:
-    - NG_CLI_ANALYTICS=ci
+

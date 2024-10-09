@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "baseUrl": ".",
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -23,28 +24,28 @@
     ],
     "paths": {
       "@spartan-ng/ui-button-helm": [
-        ".\\componentes/ui-button-helm/src/index.ts"
+        "componentes/ui-button-helm/src/index.ts"
       ],
       "@spartan-ng/ui-dialog-helm": [
-        ".\\componentes/ui-dialog-helm/src/index.ts"
+        "componentes/ui-dialog-helm/src/index.ts"
       ],
       "@spartan-ng/ui-icon-helm": [
-        ".\\componentes/ui-icon-helm/src/index.ts"
+        "componentes/ui-icon-helm/src/index.ts"
       ],
       "@spartan-ng/ui-input-helm": [
-        ".\\componentes/ui-input-helm/src/index.ts"
+        "componentes/ui-input-helm/src/index.ts"
       ],
       "@spartan-ng/ui-label-helm": [
-        ".\\componentes/ui-label-helm/src/index.ts"
+        "componentes/ui-label-helm/src/index.ts"
       ],
       "@spartan-ng/ui-table-helm": [
-        ".\\componentes/ui-table-helm/src/index.ts"
+        "componentes/ui-table-helm/src/index.ts"
       ],
       "@spartan-ng/ui-spinner-helm": [
-        ".\\componentes/ui-spinner-helm/src/index.ts"
+        "componentes/ui-spinner-helm/src/index.ts"
       ],
       "@spartan-ng/ui-card-helm": [
-        ".\\componentes/ui-card-helm/src/index.ts"
+        "componentes/ui-card-helm/src/index.ts"
       ]
     }
   },
